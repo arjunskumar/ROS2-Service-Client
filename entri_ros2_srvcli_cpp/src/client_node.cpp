@@ -35,8 +35,9 @@ int main(int argc, char **argv)
   // TODO: Wait for the result. If successful, print the response.
   // if (rclcpp::spin_until_future_complete(node, result) == rclcpp::FutureReturnCode::SUCCESS)
   // {
+  //   auto response = result.get();
   //   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Task allocation status: %s. Response: %s",
-  //               result.get()->success ? "True" : "False", result.get()->task_response.c_str());
+  //               response->success ? "True" : "False", response->task_response.c_str());
   // } else {
   //   RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Failed to call service allocate_robot_task");
   // }
